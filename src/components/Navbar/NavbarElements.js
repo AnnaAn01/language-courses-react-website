@@ -4,7 +4,10 @@ import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
   //   background: #3e8e7e;
-  background: #fabb51;
+  // background: #ff8c00;
+  // background: linear-gradient(to right, #16a085, #14d4ae);
+  // background: linear-gradient(to right, #ff7a6d, #ff7a6d);
+  background: linear-gradient(to right, #799f0c, #799f0c);
   height: 80px;
   display: flex;
   justify-content: center;
@@ -13,6 +16,8 @@ export const Nav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 10;
+  border-radius: 5px;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
@@ -99,4 +104,22 @@ export const NavBtn = styled.nav`
 export const NavBtnLink = styled(LinkR)`
   border-radius: 50px;
   background: #3e8e7e;
+  white-space: nowrap;
+  padding: 10px 22px;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: #fff;
+    color: #3e8e7e;
+    transform: translateY(3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  }
 `;
