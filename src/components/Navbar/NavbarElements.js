@@ -86,3 +86,17 @@ export const NavLinks = styled(LinkS)`
     border-bottom: 3px solid #fabb51;
   }
 `;
+
+export const NavBtn = styled.nav`
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+`;
+
+export const NavBtnLink = styled(LinkR)`
+  border-radius: 50px;
+  background: #3e8e7e;
+`;

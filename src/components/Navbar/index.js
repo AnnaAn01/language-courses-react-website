@@ -8,6 +8,8 @@ import {
   NavMenu,
   NavItem,
   NavLinks,
+  NavBtn,
+  NavBtnLink,
 } from "./NavbarElements";
 
 function Navbar() {
@@ -36,6 +38,9 @@ function Navbar() {
               <NavLinks to="signup">Sign Up</NavLinks>
             </NavItem>
           </NavMenu>
+          <NavBtn>
+            <NavBtnLink to="/signin">Sign In</NavBtnLink>
+          </NavBtn>
         </NavbarContainer>
       </Nav>
     </div>
