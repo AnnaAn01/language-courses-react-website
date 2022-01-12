@@ -10,21 +10,35 @@ import {
   SidebarRoute,
 } from "./SidebarElements";
 
-const Sidebar = () => {
+const Sidebar = ({ isOpen, toggle }) => {
   return (
-    <SidebarContainer>
+    <SidebarContainer isOpen={isOpen} onClick={toggle}>
       <Icon>
-        <CloseIcon />
+        <CloseIcon onClick={toggle} />
       </Icon>
       <sidebarWrapper>
-        <SidebarMenu>
-          <SidebarLink to="about">About</SidebarLink>
-          <SidebarLink to="courses">Our Courses</SidebarLink>
-          <SidebarLink to="language-test">Language Test</SidebarLink>
-          <SidebarLink to="individual-study">Individual Study</SidebarLink>
-          <SidebarLink to="signup">Sign Up</SidebarLink>
-          <SidebarRoute to="/signin">Sign In</SidebarRoute>
-        </SidebarMenu>
+        <SideBtnWrap>
+          <SidebarMenu>
+            <SidebarLink to="about" onClick={toggle}>
+              About
+            </SidebarLink>
+            <SidebarLink to="courses" onClick={toggle}>
+              Our Courses
+            </SidebarLink>
+            <SidebarLink to="language-test" onClick={toggle}>
+              Language Test
+            </SidebarLink>
+            <SidebarLink to="individual-study" onClick={toggle}>
+              Individual Study
+            </SidebarLink>
+            <SidebarLink to="signup" onClick={toggle}>
+              Sign Up
+            </SidebarLink>
+            <SidebarRoute to="/signin" onClick={toggle}>
+              Sign In
+            </SidebarRoute>
+          </SidebarMenu>
+        </SideBtnWrap>
       </sidebarWrapper>
     </SidebarContainer>
   );

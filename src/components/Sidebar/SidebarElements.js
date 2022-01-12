@@ -88,3 +88,8 @@ export const SidebarRoute = styled(LinkR)`
     color: #010606;
   }
 `;
+
+export const SideBtnWrap = styled.div`
+  display: flex;
+  justify-content: center;
+`;
