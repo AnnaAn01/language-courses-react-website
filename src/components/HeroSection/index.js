@@ -1,6 +1,7 @@
 import React from "react";
 import { HeroContainer, HeroBg, ImageBg } from "./HeroElements";
-import Image from "../../images/hero-1.jpg";
+// import Image from "../../images/hero-1.jpg";
+import Image from "../../images/hero-2.jpg";
 
 const HeroSection = () => {
   return (

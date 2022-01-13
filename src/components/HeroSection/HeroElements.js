@@ -6,6 +6,7 @@ export const HeroContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 30px;
+  height: 300vh;
 `;
 
 export const HeroBg = styled.div`
@@ -22,6 +23,5 @@ export const HeroBg = styled.div`
 export const ImageBg = styled.img`
   position: relative;
   background-size: cover;
-  margin-left: 100px;
-  width: 110%;
+  width: 100%;
 `;
