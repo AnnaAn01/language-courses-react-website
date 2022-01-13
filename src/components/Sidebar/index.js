@@ -3,7 +3,7 @@ import {
   SidebarContainer,
   Icon,
   CloseIcon,
-  sidebarWrapper,
+  SidebarWrapper,
   SidebarMenu,
   SidebarLink,
   SideBtnWrap,
@@ -16,7 +16,7 @@ const Sidebar = ({ isOpen, toggle }) => {
       <Icon>
         <CloseIcon onClick={toggle} />
       </Icon>
-      <sidebarWrapper>
+      <SidebarWrapper>
         <SideBtnWrap>
           <SidebarMenu>
             <SidebarLink to="about" onClick={toggle}>
@@ -39,7 +39,7 @@ const Sidebar = ({ isOpen, toggle }) => {
             </SidebarRoute>
           </SidebarMenu>
         </SideBtnWrap>
-      </sidebarWrapper>
+      </SidebarWrapper>
     </SidebarContainer>
   );
 };
