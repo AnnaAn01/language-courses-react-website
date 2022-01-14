@@ -15,8 +15,9 @@ export const Nav = styled.nav`
   font-size: 1rem;
   position: sticky;
   z-index: 10;
-  border-radius: 2px;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 10px 10px;
+  // box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1rem 2rem rgba(170, 97, 7, 0.2);
 
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
@@ -102,23 +103,24 @@ export const NavBtn = styled.nav`
 
 export const NavBtnLink = styled(LinkR)`
   border-radius: 50px;
-  background: #3e8e7e;
+  background: #fff;
   white-space: nowrap;
   padding: 10px 22px;
-  color: #fff;
+  color: #3e8e7e;
+  font-weight: bold;
   font-size: 16px;
   outline: none;
   border: none;
   cursor: pointer;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+  // box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: #fff;
+    background: whitesmoke;
     color: #3e8e7e;
     transform: translateY(3px);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    // box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
   }
 `;

@@ -1,12 +1,13 @@
 import styled from "styled-components";
 
 export const HeroContainer = styled.div`
-  background: #0c0c0c;
+  background: rgba(255, 140, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0 30px;
   height: 300vh;
+  z-index: 999;
 `;
 
 export const HeroBg = styled.div`
@@ -24,4 +25,9 @@ export const ImageBg = styled.img`
   position: relative;
   background-size: cover;
   width: 100%;
+  margin-top: 50px;
+`;
+export const ColorTr = styled.img`
+  background-image: rgba(255, 140, 0, 1);
+  z-index: 9999;
 `;
