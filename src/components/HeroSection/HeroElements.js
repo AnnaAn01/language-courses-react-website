@@ -7,7 +7,7 @@ export const HeroContainer = styled.div`
   align-items: center;
   padding: 0 30px;
   height: 300vh;
-  z-index: 999;
+  z-index: 8;
 `;
 
 export const HeroBg = styled.div`
@@ -27,7 +27,17 @@ export const ImageBg = styled.img`
   width: 100%;
   margin-top: 50px;
 `;
-export const ColorTr = styled.img`
-  background-image: rgba(255, 140, 0, 1);
-  z-index: 9999;
+export const TransparentImgCol = styled.div`
+  position: absolute;
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  padding: 0 30px;
+  height: 300vh;
+  background-color: rgba(255, 255, 255, 0.7);
+  height: 100vh;
+  width: 100vw;
+  z-index: 9;
 `;

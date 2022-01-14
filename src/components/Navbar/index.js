@@ -32,7 +32,7 @@ function Navbar({ toggle }) {
               <NavLinks to="language-test">Language Test</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="individual-study">Individual Study</NavLinks>
+              <NavLinks to="blog">Blog</NavLinks>
             </NavItem>
             <NavItem>
               <NavLinks to="signup">Sign Up</NavLinks>

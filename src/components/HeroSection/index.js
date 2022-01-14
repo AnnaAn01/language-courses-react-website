@@ -1,5 +1,10 @@
 import React from "react";
-import { HeroContainer, HeroBg, ImageBg } from "./HeroElements";
+import {
+  HeroContainer,
+  HeroBg,
+  ImageBg,
+  TransparentImgCol,
+} from "./HeroElements";
 // import Image from "../../images/hero-1.jpg";
 import Image from "../../images/hero-2.jpg";
 
@@ -9,6 +14,7 @@ const HeroSection = () => {
       <HeroContainer>
         <HeroBg>
           <ImageBg src={Image} alt="studying child" />
+          <TransparentImgCol />
         </HeroBg>
       </HeroContainer>
     </div>
