@@ -4,7 +4,19 @@ import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
   // background: #3e8e7e;
-  background: #ff8c00;
+  // background: #ff8c00;
+  // background: #0e5540;
+  // background: #e0c2c0;
+  // background: linear-gradient(to right, #84ceeb, #5ab9ea, #8860d0);
+  background: linear-gradient(
+    to right,
+    #bfe2fe,
+    #fecdcb,
+    #9dcbff,
+    #f0cfe4,
+    #ffeefc
+  );
+
   // background: linear-gradient(to right, #16a085, #14d4ae);
   // background: linear-gradient(to right, #ff7a6d, #ff7a6d);
   // background: linear-gradient(to right, #799f0c, #799f0c);
@@ -15,9 +27,9 @@ export const Nav = styled.nav`
   font-size: 1rem;
   position: sticky;
   z-index: 10;
-  border-radius: 0 0 10px 10px;
+  // border-radius: 0 0 10px 10px;
   // box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-  box-shadow: 0 1rem 2rem rgba(170, 97, 7, 0.2);
+  // box-shadow: 0 1rem 2rem rgba(170, 97, 7, 0.2);
 
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
@@ -35,7 +47,7 @@ export const NavbarContainer = styled.div`
 `;
 
 export const NavLogo = styled(LinkR)`
-  color: #fff;
+  color: #57394a;
   display: flex;
   justify-self: flex-start;
   cursor: pointer;
@@ -78,7 +90,8 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(LinkS)`
-  color: #fff;
+  color: #57394a;
+
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -106,7 +119,7 @@ export const NavBtnLink = styled(LinkR)`
   background: #fff;
   white-space: nowrap;
   padding: 10px 22px;
-  color: #3e8e7e;
+  color: #2e2c2c;
   font-weight: bold;
   font-size: 16px;
   outline: none;
