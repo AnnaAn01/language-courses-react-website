@@ -3,20 +3,7 @@ import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
-  // background: #3e8e7e;
-  // background: #ff8c00;
-  // background: #0e5540;
-  // background: #e0c2c0;
-  // background: linear-gradient(to right, #84ceeb, #5ab9ea, #8860d0);
-  background: linear-gradient(
-    to right,
-    #bfe2fe,
-    #fecdcb,
-    #9dcbff,
-    #f0cfe4,
-    #ffeefc
-  );
-
+  background: #fdfdfd;
   // background: linear-gradient(to right, #16a085, #14d4ae);
   // background: linear-gradient(to right, #ff7a6d, #ff7a6d);
   // background: linear-gradient(to right, #799f0c, #799f0c);
