@@ -1,15 +1,26 @@
 import styled from "styled-components";
 import { MdArrowForward, MdKeyboardArrowRight } from "react-icons/md";
 
+// export const HeroContainer = styled.div`
+//   // background: rgba(255, 140, 0, 0.5);
+//   background: #fdfdfd;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   padding: 0 30px;
+//   height: 800px;
+//   z-index: 8;
+// `;
+
 export const HeroContainer = styled.div`
-  // background: rgba(255, 140, 0, 0.5);
-  background: #fdfdfd;
+  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0 30px;
   height: 800px;
-  z-index: 8;
+  position: relative;
+  z-index: 1;
 `;
 
 export const HeroBg = styled.div`
