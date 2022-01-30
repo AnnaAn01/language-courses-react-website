@@ -102,7 +102,7 @@ const Navbar = ({ toggle }) => {
                 smooth={true}
                 duration={500}
                 spy={true}
-                exact={true}
+                exact="true"
                 offset={-80}
               >
                 About
@@ -114,7 +114,7 @@ const Navbar = ({ toggle }) => {
                 smooth={true}
                 duration={500}
                 spy={true}
-                exact={true}
+                exact="true"
                 offset={-80}
               >
                 Our Courses
@@ -126,7 +126,7 @@ const Navbar = ({ toggle }) => {
                 smooth={true}
                 duration={500}
                 spy={true}
-                exact={true}
+                exact="true"
                 offset={-80}
               >
                 Language Test
@@ -138,7 +138,7 @@ const Navbar = ({ toggle }) => {
                 smooth={true}
                 duration={500}
                 spy={true}
-                exact={true}
+                exact="true"
                 offset={-80}
               >
                 Blog
@@ -150,7 +150,7 @@ const Navbar = ({ toggle }) => {
                 smooth={true}
                 duration={500}
                 spy={true}
-                exact={true}
+                exact="true"
                 offset={-80}
               >
                 Sign Up
@@ -163,7 +163,7 @@ const Navbar = ({ toggle }) => {
               smooth={true}
               duration={500}
               spy={true}
-              exact={true}
+              exact="true"
               offset={-80}
             >
               Sign In
