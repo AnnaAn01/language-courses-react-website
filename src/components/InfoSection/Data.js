@@ -5,10 +5,10 @@ export const homeObjOne = {
   lightBg: false,
   lightText: true,
   lightTextDesc: true,
-  topLine: "Premium Bank",
-  headline: "Unlimited Transactions with zero fees",
+  topLine: "Language Courses",
+  headline: "English language courses for beginners.",
   description:
-    "Get access to our exclusive app that allows you to send unlimited transactioins without getting charged any fees.",
+    "Get access to our exclusive courses and learn English grammar and vocabulary without struggling.",
   buttonLabel: "Get started",
   imgStart: false,
   img: imgUrl1,
