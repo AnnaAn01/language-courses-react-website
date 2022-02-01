@@ -1,4 +1,16 @@
 import React from "react";
+import {
+  CoursesContainer,
+  CoursesH1,
+  CoursesWrapper,
+  CoursesCard,
+  CoursesIcon,
+  CoursesH2,
+  CoursesP,
+} from "./CoursesElements";
+import Icon1 from "../../images/svg-2.svg";
+import Icon2 from "../../images/svg-3.svg";
+import Icon3 from "../../images/svg-4.svg";
 
 const Courses = () => {
   return (
@@ -6,17 +18,17 @@ const Courses = () => {
       <CoursesH1>Our Courses</CoursesH1>
       <CoursesWrapper>
         <CoursesCard>
-          <CoursesIcon sr={Icon1} />
+          <CoursesIcon src={Icon1} />
           <CoursesH2>For Elementary Students</CoursesH2>
           <CoursesP>Learn the basics with this course.</CoursesP>
         </CoursesCard>
         <CoursesCard>
-          <CoursesIcon sr={Icon2} />
+          <CoursesIcon src={Icon2} />
           <CoursesH2>For Elementary Students</CoursesH2>
           <CoursesP>Learn the basics with this course.</CoursesP>
         </CoursesCard>
         <CoursesCard>
-          <CoursesIcon sr={Icon3} />
+          <CoursesIcon src={Icon3} />
           <CoursesH2>For Elementary Students</CoursesH2>
           <CoursesP>Learn the basics with this course.</CoursesP>
         </CoursesCard>
