@@ -122,6 +122,18 @@ const Navbar = ({ toggle }) => {
             </NavItem>
             <NavItem>
               <NavLinks
+                to="testimonials"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-80}
+              >
+                Testimonials
+              </NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks
                 to="language-test"
                 smooth={true}
                 duration={500}
@@ -132,6 +144,7 @@ const Navbar = ({ toggle }) => {
                 Language Test
               </NavLinks>
             </NavItem>
+            {/*
             <NavItem>
               <NavLinks
                 to="blog"
@@ -143,7 +156,8 @@ const Navbar = ({ toggle }) => {
               >
                 Blog
               </NavLinks>
-            </NavItem>
+  
+            </NavItem>*/}
             <NavItem>
               <NavLinks
                 to="signup"
