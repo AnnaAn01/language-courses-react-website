@@ -14,7 +14,7 @@ import Icon3 from "../../images/svg-4.svg";
 
 const Courses = () => {
   return (
-    <CoursesContainer>
+    <CoursesContainer id="courses">
       <CoursesH1>Our Courses</CoursesH1>
       <CoursesWrapper>
         <CoursesCard>
