@@ -89,7 +89,7 @@ const Navbar = ({ toggle }) => {
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
           <NavLogo to="/" onClick={toggleHome}>
-            ProjectLogo
+            JK English
           </NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />

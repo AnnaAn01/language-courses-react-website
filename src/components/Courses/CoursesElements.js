@@ -84,6 +84,7 @@ export const CoursesContainer = styled.div`
   justify-content: center;
   align-items: center;
   background: #010606;
+  background: #fff;
 
   @media screen and (max-width: 768px) {
     height: 1100px;
@@ -139,7 +140,7 @@ export const CoursesIcon = styled.img`
 
 export const CoursesH1 = styled.h1`
   font-size: 2.5rem;
-  color: #fff;
+  color: #000;
   margin-bottom: 62px;
 
   @media screen amd (max-width: 480px) {

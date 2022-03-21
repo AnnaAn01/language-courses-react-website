@@ -19,17 +19,17 @@ const Courses = () => {
       <CoursesWrapper>
         <CoursesCard>
           <CoursesIcon src={Icon1} />
-          <CoursesH2>For Elementary Students</CoursesH2>
+          <CoursesH2>Elementary Students</CoursesH2>
           <CoursesP>Learn the basics with this course.</CoursesP>
         </CoursesCard>
         <CoursesCard>
           <CoursesIcon src={Icon2} />
-          <CoursesH2>For Elementary Students</CoursesH2>
+          <CoursesH2>Middle School Students</CoursesH2>
           <CoursesP>Learn the basics with this course.</CoursesP>
         </CoursesCard>
         <CoursesCard>
           <CoursesIcon src={Icon3} />
-          <CoursesH2>For Elementary Students</CoursesH2>
+          <CoursesH2>High School Students</CoursesH2>
           <CoursesP>Learn the basics with this course.</CoursesP>
         </CoursesCard>
       </CoursesWrapper>
