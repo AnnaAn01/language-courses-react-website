@@ -1,6 +1,8 @@
 import imgUrl1 from "../../images/svg-1.svg";
 import imgUrl5 from "../../images/svg-5.svg";
 import imgUrl6 from "../../images/svg-6.svg";
+import imgUrl7 from "../../images/green.png";
+// import imgUrl8 from "../../images/testim4.png";
 
 export const homeObjOne = {
   id: "about",
@@ -31,7 +33,7 @@ export const homeObjTwo = {
   description: "We offer high quality affordable courses.",
   buttonLabel: "Get started",
   imgStart: false,
-  img: imgUrl5,
+  img: imgUrl7,
   alt: "Car",
   dark: false,
   primary: true,

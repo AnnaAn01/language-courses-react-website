@@ -1,9 +1,11 @@
 import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
 import React, { useState } from "react";
-import HeroSection from "../components/HeroSection";
+// import HeroSection from "../components/HeroSection";
 import InfoSection from "../components/InfoSection";
-import { homeObjOne, homeObjTwo } from "../components/InfoSection/Data";
+import Testimonials from "../components/Testimonials";
+import { homeObjOne } from "../components/InfoSection/Data";
+import { homeObjTwo } from "../components/Testimonials/Data";
 import Courses from "../components/Courses";
 import Footer from "../components/Footer";
 
@@ -21,7 +23,8 @@ const Home = () => {
       {/*<HeroSection />*/}
       <InfoSection {...homeObjOne} />
       <Courses />
-      <InfoSection {...homeObjTwo} />
+      {/*<InfoSection {...homeObjTwo} />*/}
+      <Testimonials {...homeObjTwo} />
       <Footer />
     </>
   );
