@@ -23,9 +23,9 @@ export const homeObjOne = {
 
 export const homeObjTwo = {
   id: "testimonials",
-  lightBg: false,
-  lightText: true,
-  lightTextDesc: true,
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: false,
   topLine: "Testimonials",
   headline: "Here's what people wrote about our courses.",
   description: "We offer high quality affordable courses.",
@@ -33,7 +33,7 @@ export const homeObjTwo = {
   imgStart: false,
   img: imgUrl5,
   alt: "Car",
-  dark: true,
+  dark: false,
   primary: true,
-  darkText: false,
+  darkText: true,
 };
