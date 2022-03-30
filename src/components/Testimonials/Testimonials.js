@@ -86,9 +86,11 @@ export const BtnWrap = styled.div`
 
 export const ImgWrap = styled.div`
   max-width: 200px;
-  height: 100%;
+  // height: 10%;
   display: flex;
-  position: relative;
+  position: absolute;
+  margin-top: 0px;
+  background: yellow;
   align-items: flex-start;
   justify-content: flex-start;
 `;
@@ -106,7 +108,12 @@ export const Col2TestimonialWrap = styled.div`
   height: 100%;
   justify-cntent: flex-start;
   align-items: flex-start;
+  margin-top: -50px;
+  background: red;
 `;
 
-export const TestimonialCard = styled.div``;
+export const TestimonialCard = styled.div`
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+`;
 export const TestimonialName = styled.div``;

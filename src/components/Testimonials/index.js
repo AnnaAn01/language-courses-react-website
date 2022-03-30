@@ -77,9 +77,7 @@ const TestimonialsSection = ({
                   <TestimonialName>Zina</TestimonialName>
                   Thank you very much. Lorem ipsum dolor sit, amet consectetur
                   adipisicing elit. Deserunt quae modi amet, consectetur
-                  obcaecati repellat aperiam voluptate, unde nihil non cum
-                  reprehenderit vero adipisci iure, suscipit possimus cumque
-                  autem voluptatem?
+                  obcaecati repellat aperiam voluptate.
                 </TestimonialCard>
               </Col2TestimonialWrap>
             </Column2>
