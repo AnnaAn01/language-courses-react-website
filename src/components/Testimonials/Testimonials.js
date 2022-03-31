@@ -137,6 +137,7 @@
 import styled from "styled-components";
 
 export const TestimonialsContainer = styled.div`
+  margin-top: 200px;
   color: #000;
   background: ${({ lightBg }) => (lightBg ? "#fff" : "#000")};
 
@@ -147,7 +148,7 @@ export const TestimonialsContainer = styled.div`
 export const TestimonialsWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 860px;
+  height: 600px;
   width: 100%;
   max-width: 1100px;
   margin-right: auto;
@@ -155,12 +156,13 @@ export const TestimonialsWrapper = styled.div`
   padding: 0 24px;
   justify-content: center;
   //   background: green;
+  margin-bottom: 50px;
 `;
 export const TestimonialsRow = styled.div`
   display: grid;
   grid-auto-columns: minmax(auto, 1fr);
-  column-gap: 2rem;
-  align-items: flex-start;
+  column-gap: 1.5rem;
+  align-items: center;
 
   grid-template-areas: ${({ imgStart }) =>
     imgStart ? `'col2 col1'` : `'col1 col2'`};
@@ -175,6 +177,7 @@ export const Column1 = styled.div`
   margin-bottom: 15px;
   padding: 0 15px;
   grid-area: col1;
+  // background-color: orange;
 `;
 export const Column2 = styled.div`
   margin-bottom: 15px;
@@ -219,33 +222,41 @@ export const Subtitle = styled.p`
 
 export const BtnWrap = styled.div`
   display: flex;
-  jistify-content: flex-start;
+  justify-content: flex-start;
 `;
 
-export const ImgWrap = styled.div`
-  position: relative;
-  justify-content: flex-start;
-  align-items: flex-start;
-  top: 10px;
-`;
+export const ImgWrap = styled.div``;
 
 export const Img = styled.img`
-  // width: 100%;
-  // margin: 0 0 10px 0;
-  // padding-right: 0;
-  width: 200px;
-
-  margin-bottom: 16px;
+  width: 150px;
+  margin-bottom: 10px;
 `;
 
 export const Col2TestimonialWrap = styled.div`
   max-width: 540px;
   padding-top: 0;
-  padding-bottom: 60px;
+  // padding-bottom: 50px;
 `;
 
 export const TestimonialCard = styled.div`
-  margin: 5px 0 10px 0;
-  background-color: red;
+  margin: 0px 0 15px 0;
+  // background-color: red;
+  // border: 2px solid rgba(1, 111, 113, 0.35);
+  border: 2px solid #f1f1f1;
+  padding: 5px 7px;
+  border-radius: 10px;
+  background-color: #f6f6f6;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.02);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+  }
 `;
-export const TestimonialName = styled.div``;
+export const TestimonialName = styled.div`
+  font-weight: 600;
+  padding-bottom: 5px;
+  color: green;
+`;

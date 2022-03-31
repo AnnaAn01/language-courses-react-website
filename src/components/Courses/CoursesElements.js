@@ -78,13 +78,14 @@
 import styled from "styled-components";
 
 export const CoursesContainer = styled.div`
-  height: 800px;
+  height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background: #010606;
   background: #fff;
+  // background-color: red;
 
   @media screen and (max-width: 768px) {
     height: 1100px;

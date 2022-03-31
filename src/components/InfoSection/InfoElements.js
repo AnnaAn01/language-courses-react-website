@@ -12,13 +12,14 @@ export const InfoWrapper = styled.div`
   display: grid;
   z-index: 1;
   height: 860px;
+  // margin-top: 120px;
   width: 100%;
   max-width: 1100px;
   margin-right: auto;
   margin-left: auto;
   padding: 0 24px;
   justify-content: center;
-  //   background: green;
+  // background: green;
 `;
 export const InfoRow = styled.div`
   display: grid;

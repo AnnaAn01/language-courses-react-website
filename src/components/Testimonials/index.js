@@ -171,22 +171,25 @@ const TestimonialsSection = ({
                   Շնորհակալ եմ Ձեզ վերջապես ճիշտ ուղեցույց ընթերցելու համար։ Ես
                   ինքս հաճույքով սովորում եմ Ձեր իսկ աջակցությամբ։
                 </TestimonialCard>
-                <TestimonialName lightText={lightText}>Zina</TestimonialName>
+
                 <TestimonialCard darkText={darkText}>
+                  <TestimonialName lightText={lightText}>Zina</TestimonialName>
                   Անսահման շնորհակալ եմ, չեք պատկերացնի ինչպես եմ սովորում․․․
                   առանց մի բան իմանալու, ձեզ լսելով․․․ անսահման շնորհակալ եմ․․․
                   Աստված օրհնի
                 </TestimonialCard>
-                <TestimonialName lightText={lightText}>
-                  Andranik
-                </TestimonialName>
+
                 <TestimonialCard darkText={darkText}>
+                  <TestimonialName lightText={lightText}>
+                    Andranik
+                  </TestimonialName>
                   Շնորհակալություն, շատ լավ եք ներկայացնում։
                 </TestimonialCard>
-                <TestimonialName lightText={lightText}>Hovik</TestimonialName>
+
                 <TestimonialCard darkText={darkText}>
+                  <TestimonialName lightText={lightText}>Hovik</TestimonialName>
                   Բարև Ձեզ, բառեր չոնեմ աարտահայտելու, թե որքան գիտելիք տվեցիք
-                  իմ դղային։
+                  իմ տղային։
                 </TestimonialCard>
               </Col2TestimonialWrap>
             </Column2>
