@@ -188,7 +188,7 @@ const TestimonialsSection = ({
 
                 <TestimonialCard darkText={darkText}>
                   <TestimonialName lightText={lightText}>Hovik</TestimonialName>
-                  Բարև Ձեզ, բառեր չոնեմ աարտահայտելու, թե որքան գիտելիք տվեցիք
+                  Բարև Ձեզ, բառեր չունեմ աարտահայտելու, թե որքան գիտելիք տվեցիք
                   իմ տղային։
                 </TestimonialCard>
               </Col2TestimonialWrap>
