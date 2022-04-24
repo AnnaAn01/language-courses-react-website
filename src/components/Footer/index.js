@@ -26,30 +26,28 @@ const Footer = () => {
         <FooterLinksContainer>
           <FooterLinkItems>
             <FooterLinkTitle>About Us</FooterLinkTitle>
-            <FooterLink to="/signin">How it works</FooterLink>
+            <FooterLink to="/signin">About our courses</FooterLink>
             <FooterLink to="/signin">Contacts</FooterLink>
             <FooterLink to="/signin">FAQ</FooterLink>
           </FooterLinkItems>
+
           <FooterLinkItems>
-            <FooterLinkTitle>About Us</FooterLinkTitle>
-            <FooterLink to="/signin">How it works</FooterLink>
-            <FooterLink to="/signin">Contacts</FooterLink>
-            <FooterLink to="/signin">FAQ</FooterLink>
+            <FooterLinkTitle>Our Social Media</FooterLinkTitle>
+            <FooterLink to="/signin">Youtube</FooterLink>
+            <FooterLink to="/signin">instagram</FooterLink>
           </FooterLinkItems>
           <FooterLinkItems>
             <FooterLinkTitle>Contact Us</FooterLinkTitle>
-            <FooterLink to="/signin">Youtube</FooterLink>
-            <FooterLink to="/signin">instagram</FooterLink>
             <FooterLink to="/signin">Email</FooterLink>
           </FooterLinkItems>
         </FooterLinksContainer>
         <SocialMedia>
           <SocialMediaWrap>
-            <SocialLogo to="/" onClick={toggleHome}>
-              ProjectLogo
-            </SocialLogo>
+            {/*<SocialLogo to="/" onClick={toggleHome}>
+              JK English
+  </SocialLogo>*/}
             <WebsiteRights>
-              ProjectLogo &copy; {new Date().getFullYear()} All rights reserved.
+              JK English &copy; {new Date().getFullYear()} All rights reserved.
             </WebsiteRights>
             <SocialIcons>
               <SocialIconLink
