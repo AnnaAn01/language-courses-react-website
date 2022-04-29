@@ -4,8 +4,12 @@ import React, { useState } from "react";
 // import HeroSection from "../components/HeroSection";
 import InfoSection from "../components/InfoSection";
 import Testimonials from "../components/Testimonials";
+import LanguageTest from "../components/LanguageTest";
+import LangTestWindow from "../components/LangTestWindow";
 import { homeObjOne } from "../components/InfoSection/Data";
 import { homeObjTwo } from "../components/Testimonials/Data";
+import { homeObjThree } from "../components/LanguageTest/Data";
+import { homeObjFour } from "../components/LangTestWindow/Data";
 import Courses from "../components/Courses";
 import Footer from "../components/Footer";
 
@@ -23,8 +27,10 @@ const Home = () => {
       {/*<HeroSection />*/}
       <InfoSection {...homeObjOne} />
       <Courses />
-      {/*<InfoSection {...homeObjTwo} />*/}
+
       <Testimonials {...homeObjTwo} />
+      <LanguageTest {...homeObjThree} />
+
       <Footer />
     </>
   );

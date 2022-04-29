@@ -39,3 +39,20 @@ export const homeObjTwo = {
   primary: true,
   darkText: true,
 };
+
+export const homeObjThree = {
+  id: "language-test",
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: false,
+  topLine: "language test",
+  headline: "Here's what people wrote about our courses.",
+  description: "We offer high quality affordable courses.",
+  buttonLabel: "Get started",
+  imgStart: true,
+  img: imgUrl7,
+  alt: "Car",
+  dark: false,
+  primary: true,
+  darkText: true,
+};
