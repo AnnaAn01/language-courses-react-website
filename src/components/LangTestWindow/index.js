@@ -16,18 +16,7 @@ const LangTestWindow = () => {
   return (
     <>
       <Container>
-        <FormWrap>
-          <Icon to="/">ProjectLogo</Icon>
-          <FormContent>
-            <Form action="#">
-              <FormH1>Language test</FormH1>
-              <FormLabel htmlFor="for">Password</FormLabel>
-              <FormInput type="password" required />
-              <FormButton type="submit">Continue</FormButton>
-              <Text>Forgot Password</Text>
-            </Form>
-          </FormContent>
-        </FormWrap>
+        <h1>Language Test</h1>
       </Container>
     </>
   );
