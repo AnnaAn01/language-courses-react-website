@@ -43,7 +43,7 @@ const LanguageTest = ({
                 <Subtitle darkText={darkText}></Subtitle>
                 <BtnWrap>
                   <Button
-                    to="/langtestwindow"
+                    to="/"
                     duration={500}
                     spy={true}
                     exact="true"
