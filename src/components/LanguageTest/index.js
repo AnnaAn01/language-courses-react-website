@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "../ButtonElement";
+
 import {
   LangTestContainer,
   LangTestWrapper,
@@ -13,6 +14,7 @@ import {
   BtnWrap,
   ImgWrap,
   Img,
+  LangTestButton,
 } from "./LanguageTest";
 
 const LanguageTest = ({
@@ -42,8 +44,8 @@ const LanguageTest = ({
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText}></Subtitle>
                 <BtnWrap>
-                  <Button
-                    to="/"
+                  <LangTestButton
+                    to="/langtest"
                     duration={500}
                     spy={true}
                     exact="true"
@@ -53,7 +55,7 @@ const LanguageTest = ({
                     dark2={dark2 ? 1 : 0}
                   >
                     {buttonLabel}
-                  </Button>
+                  </LangTestButton>
                 </BtnWrap>
               </TextWrapper>
             </Column1>
