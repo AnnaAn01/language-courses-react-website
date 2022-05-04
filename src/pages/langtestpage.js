@@ -1,9 +1,10 @@
 import React from "react";
+import QuizPage from "../components/QuizPage";
 
 const LangTestPage = () => {
   return (
     <div className="langtest">
-      <h1>language test page</h1>
+      <QuizPage />
     </div>
   );
 };
