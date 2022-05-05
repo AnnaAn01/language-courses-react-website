@@ -3,12 +3,16 @@ import { Link as LinkR } from "react-router-dom";
 import { createGlobalStyle } from "styled-components";
 
 export const UniversalStyle = createGlobalStyle`
+:root {
+  background-color: rgb(29, 26, 26);
+}
+
 * {
     box-sizing: border-box;
-    background: green;
     margin: 0;
     padding: 0;
     font-size: 62.5%; 
+    color: #fff;
 }
 `;
 
