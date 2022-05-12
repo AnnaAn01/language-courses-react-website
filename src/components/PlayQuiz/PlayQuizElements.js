@@ -36,16 +36,19 @@ export const PlayQuizContainer = styled.div`
 export const PlayQuizWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  //   background-color: red;
+  /* background-color: red; */
   // justify-content: center;
   align-items: space-between;
   justify-content: space-between;
 `;
 export const QuizArea = styled.div`
+  /* background-color: red; */
   display: flex;
   justify-content: space-between;
 `;
-export const QuizItem = styled.div``;
+export const QuizItem = styled.div`
+  /* background-color: yellow; */
+`;
 
 export const ProgressText = styled.p`
   text-align: center;
@@ -75,13 +78,24 @@ export const QuizMainTextScore = styled.h1`
 export const QuizQuestion = styled.h1`
   // margin-top: 3rem;
 `;
-export const ChoiceContainer = styled.div`
-  display: flex;
+
+export const ChoiceContainerUl = styled.ul`
+  list-style: none;
+`;
+
+export const ChoiceContainerLi = styled.li`
+  /* display: flex;
   margin-bottom: 0.8rem;
   width: 100%;
   border-radius: 4px;
   background: rgb(18, 93, 255);
-  min-width: 80rem;
+  min-width: 80rem; */
+  margin-top: 8px;
+  background-color: rgb(18, 93, 255);
+  padding: 16px;
+  border: 3px solid white;
+  border-radius: 20px;
+  font-size: 20px;
 
   &:hover {
     cursor: pointer;
@@ -103,6 +117,20 @@ export const ChoiceText = styled.p`
   padding: 2rem;
   width: 100%;
   font-size: 1.5rem;
+`;
+
+export const FinalResults = styled.div`
+  background-color: red;
+  margin: 0 auto;
+  padding: 16px;
+  border-radius: 16px;
+  color: #fff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px --12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+`;
+
+export const FinalResultsH2 = styled.h2`
+  font-size: 2rem;
 `;
 
 // correct and incorrect here
