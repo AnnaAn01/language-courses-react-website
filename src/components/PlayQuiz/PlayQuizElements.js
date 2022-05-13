@@ -91,11 +91,20 @@ export const ChoiceContainerLi = styled.li`
   background: rgb(18, 93, 255);
   min-width: 80rem; */
   margin-top: 8px;
-  background-color: rgb(18, 93, 255);
+  /* background-color: rgb(18, 93, 255); */
   padding: 16px;
   border: 3px solid white;
   border-radius: 20px;
   font-size: 20px;
+  background-color: ${({ color }) => color || "rgb(18, 93, 255)"};
+
+  /* .correct {
+    background-color: green;
+  }
+
+  .incorrect {
+    background-color: red;
+  } */
 
   &:hover {
     cursor: pointer;

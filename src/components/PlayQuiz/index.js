@@ -22,6 +22,7 @@ import {
 
 const theme = {
   colors: {
+    default: "blue",
     correct: "green",
     incorrect: "red",
   },
@@ -32,16 +33,19 @@ const QuizPage = () => {
   const [showFinalResults, setFinalResults] = useState(false);
   const [score, setScore] = useState(0);
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [color, setColor] = useState();
+  const [clicked, setClicked] = useState(false);
+  const [color, setColor] = useState(false);
 
   // Helper functions
   const optionClicked = (isCorrect) => {
     if (isCorrect) {
       setScore(score + 1);
-      setColor("green");
-    } else {
-      setColor("red");
     }
+    setClicked(true);
+    if (isCorrect) {
+      setColor(theme.colors.correct);
+    }
+
     if (currentQuestion + 1 < questions.length) {
       setCurrentQuestion(currentQuestion + 1);
     } else {
@@ -82,9 +86,9 @@ const QuizPage = () => {
             {questions[currentQuestion].options.map((option) => {
               return (
                 <ChoiceContainerLi
+                  color={theme.colors.correct}
                   onClick={() => optionClicked(option.isCorrect)}
                   key={option.id}
-                  color={color}
                 >
                   {option.text}
                 </ChoiceContainerLi>
