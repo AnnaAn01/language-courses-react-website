@@ -42,14 +42,16 @@ const QuizPage = () => {
       setScore(score + 1);
     }
     setClicked(true);
-    if (isCorrect) {
-      setColor(theme.colors.correct);
-    }
 
     if (currentQuestion + 1 < questions.length) {
-      setCurrentQuestion(currentQuestion + 1);
+      setTimeout(() => {
+        setCurrentQuestion(currentQuestion + 1);
+        setClicked(false);
+      }, 1000);
     } else {
-      setFinalResults(true);
+      setTimeout(() => {
+        setFinalResults(true);
+      }, 1000);
     }
   };
 
@@ -86,7 +88,9 @@ const QuizPage = () => {
             {questions[currentQuestion].options.map((option) => {
               return (
                 <ChoiceContainerLi
-                  color={theme.colors.correct}
+                  className={`
+                    ${clicked && option.isCorrect ? "correct" : ""}
+                  `}
                   onClick={() => optionClicked(option.isCorrect)}
                   key={option.id}
                 >

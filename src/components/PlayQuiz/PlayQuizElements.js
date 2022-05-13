@@ -98,13 +98,13 @@ export const ChoiceContainerLi = styled.li`
   font-size: 20px;
   background-color: ${({ color }) => color || "rgb(18, 93, 255)"};
 
-  /* .correct {
+  &.correct {
     background-color: green;
   }
 
-  .incorrect {
+  &.incorrect {
     background-color: red;
-  } */
+  }
 
   &:hover {
     cursor: pointer;
