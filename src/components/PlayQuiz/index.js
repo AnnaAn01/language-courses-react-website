@@ -62,7 +62,7 @@ const QuizPage = () => {
         <FinalResults>
           <FinalResultsH2>
             {score} out of {questions.length} correct - (
-            {(score / questions.length) * 100}%)
+            {Math.floor((score / questions.length) * 100)}%)
           </FinalResultsH2>
         </FinalResults>
       ) : (
@@ -85,11 +85,17 @@ const QuizPage = () => {
           <QuizQuestion>{questions[currentQuestion].text}</QuizQuestion>
 
           <ChoiceContainerUl>
-            {questions[currentQuestion].options.map((option) => {
+            {questions[currentQuestion].options.map((option, index) => {
               return (
                 <ChoiceContainerLi
                   className={`
-                    ${clicked && option.isCorrect ? "correct" : ""}
+                    ${
+                      clicked && option.isCorrect
+                        ? "correct"
+                        : clicked && !option.isCorrect
+                        ? "incorrect"
+                        : "default"
+                    }
                   `}
                   onClick={() => optionClicked(option.isCorrect)}
                   key={option.id}

@@ -103,9 +103,12 @@ export const ChoiceContainerLi = styled.li`
   }
 
   &.incorrect {
-    background-color: red;
+    background-color: rgb(18, 93, 255);
   }
 
+  &.default {
+    background-color: rgb(18, 93, 255);
+  }
   &:hover {
     cursor: pointer;
     box-shadow: 0 0.4rem 1.4rem 0 rgba(6, 103, 247, 0.5);
