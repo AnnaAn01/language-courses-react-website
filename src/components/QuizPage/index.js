@@ -6,6 +6,7 @@ import {
   QuizH1,
   QuizLink,
   QuizContentInfo,
+  QuizImg,
 } from "./QuizPageElements";
 
 const QuizPage = () => {
@@ -20,8 +21,8 @@ const QuizPage = () => {
         <QuizContentInfo>
           Quiz content is taken from grade 3, 4 and 5 textbooks.
         </QuizContentInfo>
-        <QuizLink to="/quizgame">Take the quiz</QuizLink>
       </QuizWrapper>
+      <QuizLink to="/quizgame">Take the quiz</QuizLink>
     </QuizPageContainer>
   );
 };

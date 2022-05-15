@@ -5,6 +5,7 @@ import { createGlobalStyle } from "styled-components";
 export const UniversalStyle = createGlobalStyle`
 :root {
   background-color: #fff;
+  
 }
 
 * {
@@ -17,6 +18,7 @@ export const UniversalStyle = createGlobalStyle`
 `;
 
 export const QuizPageContainer = styled.div`
+  flex-direction: column;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -33,6 +35,13 @@ export const QuizWrapper = styled.div`
   justify-content: center;
   align-items: center;
   border: 2px solid green;
+  padding: 2rem;
+  border-radius: 20px;
+  background: linear-gradient(
+    90deg,
+    rgba(246, 249, 205, 0.5) 0%,
+    rgba(248, 244, 250, 0.5) 100%
+  );
 `;
 
 export const QuizH1 = styled.h1`
@@ -44,19 +53,20 @@ export const QuizH1 = styled.h1`
 
 export const QuizContentInfo = styled.div`
   font-size: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 `;
+
+export const QuizImg = styled.img``;
 
 export const QuizLink = styled(LinkR)`
   font-size: 2.4rem;
   padding: 2rem 0;
   width: 30rem;
   text-align: center;
-  margin-bottom: 1rem;
   text-decoration: none;
   color: #fff;
-  border-radius: 50px;
-
+  border-radius: 20px;
+  margin-top: 3rem;
   background: linear-gradient(90deg, rgb(5, 170, 101) 0%, rgb(4, 153, 91) 100%);
 
   &:hover {
