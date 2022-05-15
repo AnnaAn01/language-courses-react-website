@@ -80,7 +80,7 @@ const questions = [
     ],
   },
   {
-    text: "1.	Now I ... ... a letter. (write)",
+    text: "Now I ... ... a letter.",
     options: [
       { id: 0, text: "write", isCorrect: false },
       { id: 1, text: "am writing", isCorrect: true },
@@ -89,7 +89,7 @@ const questions = [
     ],
   },
   {
-    text: "2.	Look, the doctor ... ... a car. ",
+    text: "Look, the doctor ... ... a car. ",
     options: [
       { id: 0, text: "is driving", isCorrect: true },
       { id: 1, text: "drives", isCorrect: false },

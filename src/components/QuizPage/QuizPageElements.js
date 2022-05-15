@@ -34,31 +34,33 @@ export const QuizWrapper = styled.div`
   //   background-color: red;
   justify-content: center;
   align-items: center;
-  border: 2px solid green;
+  border: 2px solid rgb(248, 244, 250);
   padding: 2rem;
   border-radius: 20px;
-  background: linear-gradient(
-    90deg,
-    rgba(246, 249, 205, 0.5) 0%,
-    rgba(248, 244, 250, 0.5) 100%
-  );
+  background: rgba(248, 244, 250, 0.5);
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(227, 199, 242, 0.7);
 `;
 
 export const QuizH1 = styled.h1`
   font-size: 2.5rem;
   color: #000;
   margin-bottom: 2rem;
+  margin: 2rem 3rem 3rem 3rem;
   text-align: center;
 `;
 
 export const QuizContentInfo = styled.div`
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 `;
 
-export const QuizImg = styled.img``;
+export const QuizImg = styled.img`
+  width: 40%;
+  margin: 2rem 0;
+`;
 
 export const QuizLink = styled(LinkR)`
+  font-weight: 500;
   font-size: 2.4rem;
   padding: 2rem 0;
   width: 30rem;
@@ -67,7 +69,11 @@ export const QuizLink = styled(LinkR)`
   color: #fff;
   border-radius: 20px;
   margin-top: 3rem;
-  background: linear-gradient(90deg, rgb(5, 170, 101) 0%, rgb(4, 153, 91) 100%);
+  background: linear-gradient(
+    90deg,
+    rgb(15, 190, 117) 0%,
+    rgb(11, 181, 110) 100%
+  );
 
   &:hover {
     cursor: pointer;

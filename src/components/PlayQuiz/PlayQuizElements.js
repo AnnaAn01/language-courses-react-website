@@ -4,7 +4,7 @@ import { createGlobalStyle } from "styled-components";
 
 export const UniversalStyle = createGlobalStyle`
 :root {
-  background-color: rgb(29, 26, 26);
+  background-color: #fff;
 }
 
 * {
@@ -12,12 +12,12 @@ export const UniversalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     font-size: 62.5%; 
-    color: #fff;
+    color: #000;
 }
 
 h1 {
   font-size: 4rem;
-    color: #fff;
+    color: #000;
     margin-bottom: 5rem;
 }
 `;
@@ -40,6 +40,10 @@ export const PlayQuizWrapper = styled.div`
   // justify-content: center;
   align-items: space-between;
   justify-content: space-between;
+  background: rgba(248, 244, 250, 0.9);
+  padding: 4rem 8rem;
+  border-radius: 20px;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(227, 199, 242, 0.7);
 `;
 export const QuizArea = styled.div`
   /* background-color: red; */
@@ -53,6 +57,9 @@ export const QuizItem = styled.div`
 export const ProgressText = styled.p`
   text-align: center;
   font-size: 2rem;
+  /* background-color: yellow; */
+  color: #016f71;
+  font-weight: bold;
 `;
 export const ProgressBar = styled.div`
   width: 20rem;
@@ -70,10 +77,17 @@ export const ProgressBarFull = styled.div`
 export const QuizItemPrefix = styled.p`
   text-align: center;
   font-size: 2rem;
+  color: #016f71;
+  font-weight: bold;
+  /* background-color: yellow; */
 `;
 export const QuizMainTextScore = styled.h1`
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #016f71;
+  font-weight: bold;
+  /* background-color: yellow; */
 `;
 export const QuizQuestion = styled.h1`
   // margin-top: 3rem;
@@ -81,6 +95,7 @@ export const QuizQuestion = styled.h1`
 
 export const ChoiceContainerUl = styled.ul`
   list-style: none;
+  text-align: center;
 `;
 
 export const ChoiceContainerLi = styled.li`
@@ -88,7 +103,6 @@ export const ChoiceContainerLi = styled.li`
   margin-bottom: 0.8rem;
   width: 100%;
   border-radius: 4px;
-  background: rgb(18, 93, 255);
   min-width: 80rem; */
   margin-top: 8px;
   /* background-color: rgb(18, 93, 255); */
@@ -96,23 +110,22 @@ export const ChoiceContainerLi = styled.li`
   border: 3px solid white;
   border-radius: 20px;
   font-size: 20px;
-  background-color: ${({ color }) => color || "rgb(18, 93, 255)"};
 
   &.correct {
-    background-color: green;
+    background-color: #2ec52e;
   }
 
   &.incorrect {
-    background-color: rgb(18, 93, 255);
+    background-color: #f96464;
   }
 
   &.default {
-    background-color: rgb(18, 93, 255);
+    background-color: rgba(209, 126, 254, 0.7);
   }
   &:hover {
     cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rgba(6, 103, 247, 0.5);
-    transform: scale(1.02);
+
+    transform: scale(1.05);
     transform: transform 100ms;
   }
 

@@ -8,6 +8,7 @@ import {
   QuizContentInfo,
   QuizImg,
 } from "./QuizPageElements";
+import imgQuiz from "../../images/svg-quiz.svg";
 
 const QuizPage = () => {
   return (
@@ -18,6 +19,7 @@ const QuizPage = () => {
           Try not to choose answers randomly. We want to make sure your results
           are accurate.
         </QuizH1>
+        <QuizImg src={imgQuiz} alt="quiz"></QuizImg>
         <QuizContentInfo>
           Quiz content is taken from grade 3, 4 and 5 textbooks.
         </QuizContentInfo>

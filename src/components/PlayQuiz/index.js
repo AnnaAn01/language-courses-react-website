@@ -72,9 +72,9 @@ const QuizPage = () => {
               <ProgressText>
                 Question {currentQuestion + 1} out of {questions.length}
               </ProgressText>
-              <ProgressBar>
+              {/*<ProgressBar>
                 <ProgressBarFull></ProgressBarFull>
-              </ProgressBar>
+      </ProgressBar>*/}
             </QuizItem>
             <QuizItem>
               <QuizItemPrefix>Current Score:</QuizItemPrefix>
