@@ -4,7 +4,7 @@ import { createGlobalStyle } from "styled-components";
 
 export const UniversalStyle = createGlobalStyle`
 :root {
-  background-color: rgb(29, 26, 26);
+  background-color: #fff;
 }
 
 * {
@@ -12,7 +12,7 @@ export const UniversalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     font-size: 62.5%; 
-    color: #fff;
+    color: #000;
 }
 `;
 
@@ -32,12 +32,19 @@ export const QuizWrapper = styled.div`
   //   background-color: red;
   justify-content: center;
   align-items: center;
+  border: 2px solid green;
 `;
 
 export const QuizH1 = styled.h1`
-  font-size: 5.4rem;
-  color: #fff;
-  margin-bottom: 5rem;
+  font-size: 2.5rem;
+  color: #000;
+  margin-bottom: 2rem;
+  text-align: center;
+`;
+
+export const QuizContentInfo = styled.div`
+  font-size: 2rem;
+  margin-bottom: 2rem;
 `;
 
 export const QuizLink = styled(LinkR)`
@@ -47,17 +54,14 @@ export const QuizLink = styled(LinkR)`
   text-align: center;
   margin-bottom: 1rem;
   text-decoration: none;
-  color: rgb(28, 26, 26);
-  border-radius: 4px;
-  background: linear-gradient(
-    90deg,
-    rgb(18, 92, 255) 0%,
-    rgb(0, 102, 255) 100%
-  );
+  color: #fff;
+  border-radius: 50px;
+
+  background: linear-gradient(90deg, rgb(5, 170, 101) 0%, rgb(4, 153, 91) 100%);
 
   &:hover {
     cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rgba(8, 114, 244, 0.6);
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(5, 216, 128, 0.3);
     transition: transform 150ms;
     transform: scale(1.03);
   }
