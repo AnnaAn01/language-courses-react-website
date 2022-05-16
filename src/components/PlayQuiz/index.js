@@ -34,7 +34,6 @@ const QuizPage = () => {
   const [score, setScore] = useState(0);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [clicked, setClicked] = useState(false);
-  const [color, setColor] = useState(false);
 
   // Helper functions
   const optionClicked = (isCorrect) => {
@@ -104,25 +103,6 @@ const QuizPage = () => {
                 </ChoiceContainerLi>
               );
             })}
-            {/*
-
-            <ChoiceContainerLi>
-              <ChoicePrefix>A</ChoicePrefix>
-              <ChoiceText data-number="1">Choice</ChoiceText>
-            </ChoiceContainerLi>
-            <ChoiceContainerLi>
-              <ChoicePrefix>B</ChoicePrefix>
-              <ChoiceText data-number="2">Choice 2</ChoiceText>
-            </ChoiceContainerLi>
-            <ChoiceContainerLi>
-              <ChoicePrefix>C</ChoicePrefix>
-              <ChoiceText data-number="3">Choice 3</ChoiceText>
-            </ChoiceContainerLi>
-            <ChoiceContainerLi>
-              <ChoicePrefix>D</ChoicePrefix>
-              <ChoiceText data-number="4">Choice 4</ChoiceText>
-            </ChoiceContainerLi>
-            */}
           </ChoiceContainerUl>
         </PlayQuizWrapper>
       )}
