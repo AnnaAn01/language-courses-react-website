@@ -40,10 +40,10 @@ export const PlayQuizWrapper = styled.div`
   // justify-content: center;
   align-items: space-between;
   justify-content: space-between;
-  background: rgba(248, 244, 250, 0.9);
+  background: rgba(248, 244, 250, 1);
   padding: 4rem 8rem;
   border-radius: 20px;
-  box-shadow: 0 0.4rem 1.4rem 0 rgba(227, 199, 242, 0.7);
+  box-shadow: 0.1rem 0.4rem 1.4rem 0.4rem rgba(227, 199, 242, 0.8);
 `;
 export const QuizArea = styled.div`
   /* background-color: red; */
@@ -145,9 +145,14 @@ export const ChoiceText = styled.p`
 `;
 
 export const FinalResults = styled.div`
-  background-color: red;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  /* background-color: rgba(243, 139, 163, 0.3); */
+  background-color: rgba(248, 244, 250, 1);
   margin: 0 auto;
-  padding: 16px;
+  padding: 30px;
   border-radius: 16px;
   color: #fff;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px --12px,
@@ -158,4 +163,7 @@ export const FinalResultsH2 = styled.h2`
   font-size: 2rem;
 `;
 
+export const FinalResultsImg = styled.img`
+  width: 50%;
+`;
 // correct and incorrect here
