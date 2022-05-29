@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/language-courses-react-website/static/css/main.d7da34c1.css",
-    "main.js": "/language-courses-react-website/static/js/main.88f26a98.js",
+    "main.js": "/language-courses-react-website/static/js/main.b1987030.js",
     "static/media/svg-6.svg": "/language-courses-react-website/static/media/svg-6.ff5d2e26bf556fa55963eba501056d03.svg",
     "static/media/result-level-1.svg": "/language-courses-react-website/static/media/result-level-1.f8a1a9fae779b973185279dd43ffc03a.svg",
     "static/media/svg-test-7.svg": "/language-courses-react-website/static/media/svg-test-7.d02314e971e039d44bc760534c4422fe.svg",
@@ -13,10 +13,10 @@
     "static/media/result-level-2.svg": "/language-courses-react-website/static/media/result-level-2.a7039fc6f037ab7e5862141e87e0ce8f.svg",
     "index.html": "/language-courses-react-website/index.html",
     "main.d7da34c1.css.map": "/language-courses-react-website/static/css/main.d7da34c1.css.map",
-    "main.88f26a98.js.map": "/language-courses-react-website/static/js/main.88f26a98.js.map"
+    "main.b1987030.js.map": "/language-courses-react-website/static/js/main.b1987030.js.map"
   },
   "entrypoints": [
     "static/css/main.d7da34c1.css",
-    "static/js/main.88f26a98.js"
+    "static/js/main.b1987030.js"
   ]
 }
