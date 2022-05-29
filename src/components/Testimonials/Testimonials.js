@@ -9,22 +9,52 @@ export const TestimonialsContainer = styled.div`
   height: 700px;
   background-color: rgba(239, 220, 249, 0.2);
 
+  @media screen and (max-width: 1024px) and (min-width: 1001px) {
+    height: 600px;
+  }
+
+  @media screen and (max-width: 1001px) {
+    height: 1200px;
+  }
+
   @media screen and (max-width: 768px) {
-    padding: 100px 0;
+    padding: 0px 0;
+  }
+
+  @media screen and (max-width: 451px) {
+    /* background-color: red; */
+    height: 1380px;
+  }
+
+  @media screen and (max-width: 362px) {
+    height: 1400px;
+  }
+
+  @media screen and (max-width: 281px) and (max-height: 654px) {
+    height: 1350px;
   }
 `;
 export const TestimonialsWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 600px;
+  /* height: 600px; */
   width: 100%;
   max-width: 1100px;
   margin-right: auto;
   margin-left: auto;
   padding: 100px 24px;
   justify-content: center;
-  //   background: green;
+  /* background: green; */
   margin-bottom: 50px;
+  height: auto;
+
+  @media screen and (max-width: 1024px) and (min-width: 1001px) {
+    padding-top: 50px;
+  }
+
+  /* @media screen and (max-width: 451px) {
+    height: 1700px;
+  } */
 `;
 export const TestimonialsRow = styled.div`
   display: grid;
@@ -34,8 +64,15 @@ export const TestimonialsRow = styled.div`
 
   grid-template-areas: "col1 col2";
 
+  @media screen and (max-width: 1001px) {
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+    padding-bottom: 20px;
+  }
+
   @media screen and (max-width: 768px) {
-    grid-template-areas: "col1 col2" "col1 col1" "col2 col2";
+    /* grid-template-areas: "col1 col2" "col1 col1" "col2 col2"; */
   }
 `;
 
@@ -51,7 +88,7 @@ export const Column2 = styled.div`
   grid-area: col2;
 `;
 export const TextWrapper = styled.div`
-  // background: yellow;
+  /* background: yellow; */
   max-width: 540px;
   padding-top: 0;
   padding-bottom: 60px;
@@ -82,6 +119,11 @@ export const Subtitle = styled.p`
   margin-bottom: 35px;
   line-height: 24px;
   color: #010606;
+
+  @media screen and (max-width: 1001px) {
+    font-size: 1.7rem;
+    line-height: 1.25;
+  }
 `;
 
 export const BtnWrap = styled.div`
@@ -116,11 +158,23 @@ export const TestimonialCard = styled.div`
     transition: all 0.2s ease-in-out;
     cursor: pointer;
   }
+
+  @media screen and (max-width: 1001px) {
+    font-size: 1rem;
+  }
 `;
 export const TestimonialName = styled.div`
   font-weight: 600;
   padding-bottom: 5px;
   color: green;
+
+  @media screen and (max-width: 1001px) {
+    font-size: 1.4rem;
+  }
+
+  @media screen and (max-width: 1001px) {
+    font-size: 1.1rem;
+  }
 `;
 
 export const TestimonialsButton = styled(LinkR)`
@@ -142,5 +196,13 @@ export const TestimonialsButton = styled(LinkR)`
   &:hover {
     transition: all 0.2s ease-in-out;
     background: #62c2a2;
+  }
+
+  @media screen and (max-width: 1001px) {
+    font-size: 1.7rem;
+  }
+
+  @media screen and (max-width: 281px) and (max-height: 654px) {
+    font-size: 1.2rem;
   }
 `;

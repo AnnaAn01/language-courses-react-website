@@ -47,11 +47,24 @@ export const QuizH1 = styled.h1`
   margin-bottom: 2rem;
   margin: 2rem 3rem 3rem 3rem;
   text-align: center;
+
+  @media screen and (max-width: 281px) and (max-height: 654px) {
+    font-size: 2rem;
+    margin: 1rem;
+  }
 `;
 
 export const QuizContentInfo = styled.div`
   font-size: 2rem;
   margin: 1rem 0;
+
+  @media screen and (max-width: 1001px) {
+    font-size: 2.5rem;
+  }
+
+  @media screen and (max-width: 281px) and (max-height: 654px) {
+    font-size: 2rem;
+  }
 `;
 
 export const QuizImg = styled.img`
@@ -80,5 +93,14 @@ export const QuizLink = styled(LinkR)`
     box-shadow: 0 0.4rem 1.4rem 0 rgba(5, 216, 128, 0.3);
     transition: transform 150ms;
     transform: scale(1.03);
+  }
+
+  @media screen and (max-width: 1001px) {
+    font-size: 2.7rem;
+  }
+
+  @media screen and (max-width: 281px) and (max-height: 654px) {
+    font-size: 2rem;
+    width: 20rem;
   }
 `;

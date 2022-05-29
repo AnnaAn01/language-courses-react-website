@@ -7,8 +7,19 @@ export const LangTestContainer = styled.div`
   /* background-color: rgba(239, 220, 249, 0.2); */
   background: #fff;
 
+  /* @media screen and (max-width: 1024px) and (min-width: 1001px) {
+    height: 500px;
+  } */
+
+  @media screen and (max-width: 1024px) and (min-width: 1001px) {
+    /* padding: 120px 24px;
+    margin-top: -40px;
+    margin-bottom: -20px;
+    height: 550px; */
+  }
+
   @media screen and (max-width: 768px) {
-    padding: 100px 0;
+    padding: 20px 0 100px 0;
   }
 `;
 export const LangTestWrapper = styled.div`
@@ -22,6 +33,21 @@ export const LangTestWrapper = styled.div`
   padding: 120px 24px;
   justify-content: center;
   /* margin-bottom: 50px; */
+
+  @media screen and (max-width: 1024px) and (min-width: 1001px) {
+    padding-top: 50px;
+    height: 550px;
+    padding-bottom: 10px;
+  }
+
+  @media screen and (max-width: 568px) {
+    height: 670px;
+    margin-top: -50px;
+  }
+
+  @media screen and (max-width: 451px) {
+    height: 550px;
+  }
 `;
 export const LangTestRow = styled.div`
   display: grid;
@@ -34,6 +60,11 @@ export const LangTestRow = styled.div`
   @media screen and (max-width: 768px) {
     grid-template-areas: "col1 col2" "col1 col1" "col2 col2";
   }
+
+  @media screen and (max-width: 568px) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 `;
 
 export const Column1 = styled.div`
@@ -45,6 +76,10 @@ export const Column2 = styled.div`
   margin-bottom: 15px;
   padding: 0 15px;
   grid-area: col2;
+
+  @media screen and (max-width: 568px) {
+    width: 60%;
+  }
 `;
 export const TextWrapper = styled.div`
   max-width: 540px;
@@ -142,5 +177,13 @@ export const LangTestButton = styled(LinkR)`
   &:hover {
     transition: all 0.2s ease-in-out;
     background: #62c2a2;
+  }
+
+  @media screen and (max-width: 1001px) {
+    font-size: 1.7rem;
+  }
+
+  @media screen and (max-width: 281px) and (max-height: 654px) {
+    font-size: 1.2rem;
   }
 `;

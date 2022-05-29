@@ -23,6 +23,25 @@ export const InfoWrapper = styled.div`
   padding: 160px 24px 0 24px;
   justify-content: center;
   /* background: green; */
+
+  @media screen and (max-width: 1024px) and (min-width: 1001px) {
+    height: 650px;
+    padding: 100px 24px 0 24px;
+  }
+
+  @media screen and (max-width: 1001px) {
+    height: 750px;
+    padding: 120px 24px 0 24px;
+  }
+
+  @media screen and (max-width: 568px) {
+    height: 660px;
+    margin-top: -40px;
+  }
+
+  @media screen and (max-width: 451px) {
+    height: 600px;
+  }
 `;
 export const InfoRow = styled.div`
   display: grid;
@@ -30,9 +49,15 @@ export const InfoRow = styled.div`
   column-gap: 2rem;
   align-items: center;
   grid-template-areas: "col1 col2";
+  /* background-color: red; */
 
   @media screen and (max-width: 768px) {
     grid-template-areas: "col1 col2" "col1 col1" "col2 col2";
+  }
+
+  @media screen and (max-width: 568px) {
+    display: flex;
+    flex-direction: column-reverse;
   }
 `;
 
@@ -45,6 +70,10 @@ export const Column2 = styled.div`
   margin-bottom: 15px;
   padding: 0 15px;
   grid-area: col2;
+
+  @media screen and (max-width: 568px) {
+    width: 60%;
+  }
 `;
 export const TextWrapper = styled.div`
   //   background: yellow;
@@ -78,6 +107,15 @@ export const Subtitle = styled.p`
   margin-bottom: 35px;
   line-height: 24px;
   color: #010606;
+
+  @media screen and (max-width: 1001px) {
+    font-size: 1.7rem;
+    line-height: 1.25;
+  }
+
+  @media screen and (max-width: 281px) and (max-height: 654px) {
+    font-size: 1.5rem;
+  }
 `;
 
 export const BtnWrap = styled.div`
@@ -92,8 +130,12 @@ export const ImgWrap = styled.div`
 
 export const Img = styled.img`
   width: 100%;
-  margin: 0 0 10px 0;
+  margin: -100px 0 10px 0;
   padding-right: 0;
+
+  @media screen and (max-width: 1001px) {
+    width: 100%;
+  }
 `;
 
 export const InfoButton = styled(LinkR)`
@@ -115,5 +157,13 @@ export const InfoButton = styled(LinkR)`
   &:hover {
     transition: all 0.2s ease-in-out;
     background: #62c2a2;
+  }
+
+  @media screen and (max-width: 1001px) {
+    font-size: 1.7rem;
+  }
+
+  @media screen and (max-width: 281px) and (max-height: 654px) {
+    font-size: 1.2rem;
   }
 `;

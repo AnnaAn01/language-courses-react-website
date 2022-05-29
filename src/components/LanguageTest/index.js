@@ -31,7 +31,7 @@ const LanguageTest = () => {
                   <LangTestButton
                     to="/langtest"
                     duration={500}
-                    spy={true}
+                    spy="true"
                     exact="true"
                     offset={-80}
                   >

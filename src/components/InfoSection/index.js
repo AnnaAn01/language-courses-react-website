@@ -1,5 +1,4 @@
 import React from "react";
-import { Button } from "../ButtonElement";
 import imgUrl6 from "../../images/svg-6.svg";
 
 import {
@@ -36,7 +35,7 @@ const InfoSection = () => {
                   <InfoButton
                     to="/signin"
                     duration={500}
-                    spy={true}
+                    spy="true"
                     exact="true"
                     offset={-80}
                   >

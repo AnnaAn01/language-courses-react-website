@@ -24,12 +24,14 @@ const Sidebar = ({ isOpen, toggle }) => {
           <SidebarLink to="courses" onClick={toggle}>
             Our Courses
           </SidebarLink>
+
+          <SidebarLink to="testimonials" onClick={toggle}>
+            Testimonials
+          </SidebarLink>
           <SidebarLink to="language-test" onClick={toggle}>
             Language Test
           </SidebarLink>
-          <SidebarLink to="individual-study" onClick={toggle}>
-            Individual Study
-          </SidebarLink>
+
           <SidebarLink to="signup" onClick={toggle}>
             Sign Up
           </SidebarLink>

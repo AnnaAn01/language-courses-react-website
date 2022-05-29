@@ -50,7 +50,7 @@ const TestimonialsSection = ({
                   <TestimonialsButton
                     to="/signin"
                     duration={500}
-                    spy={true}
+                    spy="true"
                     exact="true"
                     offset={-80}
                   >

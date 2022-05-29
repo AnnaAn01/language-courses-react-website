@@ -47,7 +47,7 @@ const Navbar = ({ toggle }) => {
             <NavItem>
               <NavLinks
                 to="about"
-                smooth={true}
+                smooth="true"
                 duration={500}
                 spy={true}
                 exact="true"
@@ -59,7 +59,7 @@ const Navbar = ({ toggle }) => {
             <NavItem>
               <NavLinks
                 to="courses"
-                smooth={true}
+                smooth="true"
                 duration={500}
                 spy={true}
                 exact="true"
@@ -71,7 +71,7 @@ const Navbar = ({ toggle }) => {
             <NavItem>
               <NavLinks
                 to="testimonials"
-                smooth={true}
+                smooth="true"
                 duration={500}
                 spy={true}
                 exact="true"
@@ -83,7 +83,7 @@ const Navbar = ({ toggle }) => {
             <NavItem>
               <NavLinks
                 to="language-test"
-                smooth={true}
+                smooth="true"
                 duration={500}
                 spy={true}
                 exact="true"
@@ -92,24 +92,11 @@ const Navbar = ({ toggle }) => {
                 Language Test
               </NavLinks>
             </NavItem>
-            {/*
-            <NavItem>
-              <NavLinks
-                to="blog"
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact="true"
-                offset={-80}
-              >
-                Blog
-              </NavLinks>
-  
-            </NavItem>*/}
+
             <NavItem>
               <NavLinks
                 to="signup"
-                smooth={true}
+                smooth="true"
                 duration={500}
                 spy={true}
                 exact="true"
@@ -122,9 +109,9 @@ const Navbar = ({ toggle }) => {
           <NavBtn>
             <NavBtnLink
               to="/signin"
-              smooth={true}
+              smooth="true"
               duration={500}
-              spy={true}
+              spy="true"
               exact="true"
               offset={-80}
             >
