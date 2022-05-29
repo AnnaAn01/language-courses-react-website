@@ -3,7 +3,8 @@ import { Link as LinkR } from "react-router-dom";
 
 export const InfoContainer = styled.div`
   color: #000;
-  background: #fff;
+  /* background: #fff; */
+  background-color: rgba(239, 220, 249, 0.2);
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;
@@ -12,15 +13,16 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 860px;
-  // margin-top: 120px;
+  height: 750px;
+  /* height: 860px; */
+
   width: 100%;
   max-width: 1100px;
   margin-right: auto;
   margin-left: auto;
-  padding: 0 24px;
+  padding: 160px 24px 0 24px;
   justify-content: center;
-  // background: green;
+  /* background: green; */
 `;
 export const InfoRow = styled.div`
   display: grid;

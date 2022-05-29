@@ -2,7 +2,8 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const FooterContainer = styled.footer`
-  background-color: #101522;
+  background-color: #01bf71;
+  /* background-color: #101522; */
 `;
 export const FooterWrap = styled.div`
   padding: 48px 24px;
@@ -16,6 +17,7 @@ export const FooterWrap = styled.div`
 export const FooterLinksContainer = styled.div`
   display: flex;
   justify-content: center;
+  height: 120px;
 
   @media screen and (max-width: 820px) {
     padding-top: 32px;
@@ -58,7 +60,7 @@ export const FooterLink = styled.div`
   cursor: pointer;
 
   &:hover {
-    color: #01bf71;
+    color: yellow;
     transition: 0.3s ease-out;
   }
 `;

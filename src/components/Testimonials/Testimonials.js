@@ -2,9 +2,12 @@ import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
 
 export const TestimonialsContainer = styled.div`
-  margin-top: 200px;
+  /* margin-top: 200px; */
   color: #000;
-  background: #fff;
+  /* background: yellow; */
+  /* background: #fff; */
+  height: 700px;
+  background-color: rgba(239, 220, 249, 0.2);
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;
@@ -18,7 +21,7 @@ export const TestimonialsWrapper = styled.div`
   max-width: 1100px;
   margin-right: auto;
   margin-left: auto;
-  padding: 0 24px;
+  padding: 100px 24px;
   justify-content: center;
   //   background: green;
   margin-bottom: 50px;

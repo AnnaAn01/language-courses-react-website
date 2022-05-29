@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 export const CoursesContainer = styled.div`
-  height: 600px;
+  height: 650px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background: #010606;
   background: #fff;
-  // background-color: red;
+  /* background-color: rgba(239, 220, 249, 0.2); */
 
   @media screen and (max-width: 768px) {
     height: 1100px;
@@ -26,6 +26,7 @@ export const CoursesWrapper = styled.div`
   align-items: center;
   grid-gap: 30px;
   padding: 0 50px;
+  /* background-color: red; */
 
   @media screen and (max-width: 1000px) {
     grid-template-columns: 1fr 1fr;

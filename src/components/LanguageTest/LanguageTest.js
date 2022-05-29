@@ -2,8 +2,9 @@ import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
 
 export const LangTestContainer = styled.div`
-  margin-top: 200px;
+  /* margin-top: 200px; */
   color: #000;
+  /* background-color: rgba(239, 220, 249, 0.2); */
   background: #fff;
 
   @media screen and (max-width: 768px) {
@@ -13,14 +14,14 @@ export const LangTestContainer = styled.div`
 export const LangTestWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 600px;
+  height: 650px;
   width: 100%;
   max-width: 1100px;
   margin-right: auto;
   margin-left: auto;
-  padding: 0 24px;
+  padding: 120px 24px;
   justify-content: center;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 `;
 export const LangTestRow = styled.div`
   display: grid;
