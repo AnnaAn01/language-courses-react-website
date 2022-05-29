@@ -1,5 +1,4 @@
 import React from "react";
-// import { Button } from "../ButtonElement";
 
 import {
   LangTestContainer,
@@ -10,39 +9,24 @@ import {
   TextWrapper,
   TopLine,
   Heading,
-  Subtitle,
   BtnWrap,
   ImgWrap,
   Img,
   LangTestButton,
 } from "./LanguageTest";
-
-const LanguageTest = ({
-  lightBg,
-  id,
-  imgStart,
-  topLine,
-  lightText,
-  headline,
-  darkText,
-  description,
-  buttonLabel,
-  img,
-  alt,
-  primary,
-  dark,
-  dark2,
-}) => {
+import imgUrl8 from "../../images/svg-test-7.svg";
+const LanguageTest = () => {
   return (
     <>
-      <LangTestContainer lightBg={lightBg} id={id}>
+      <LangTestContainer id="language-test">
         <LangTestWrapper>
-          <LangTestRow imgStart={imgStart}>
+          <LangTestRow>
             <Column1>
               <TextWrapper>
-                <TopLine>{topLine}</TopLine>
-                <Heading lightText={lightText}>{headline}</Heading>
-                <Subtitle darkText={darkText}></Subtitle>
+                <TopLine>language test</TopLine>
+                <Heading>
+                  Try our online test to find out which course is right for you.
+                </Heading>
                 <BtnWrap>
                   <LangTestButton
                     to="/langtest"
@@ -50,18 +34,15 @@ const LanguageTest = ({
                     spy={true}
                     exact="true"
                     offset={-80}
-                    primary={primary ? 1 : 0}
-                    dark={dark ? 1 : 0}
-                    dark2={dark2 ? 1 : 0}
                   >
-                    {buttonLabel}
+                    Take the quiz
                   </LangTestButton>
                 </BtnWrap>
               </TextWrapper>
             </Column1>
             <Column2>
               <ImgWrap>
-                <Img src={img} alt={alt} />
+                <Img src={imgUrl8} alt="quiz" />
               </ImgWrap>
             </Column2>
           </LangTestRow>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import questions from "../QuizPage/Data";
+import questions from "../PlayQuiz/Data";
 import FinalResultImg1 from "../../images/result-level-1.svg";
 import FinalResultImg2 from "../../images/result-level-2.svg";
 import FinalResultImg3 from "../../images/result-level-3.svg";
@@ -10,15 +10,11 @@ import {
   QuizArea,
   QuizItem,
   ProgressText,
-  ProgressBar,
-  ProgressBarFull,
   QuizItemPrefix,
   QuizMainTextScore,
   QuizQuestion,
   ChoiceContainerUl,
   ChoiceContainerLi,
-  ChoicePrefix,
-  ChoiceText,
   FinalResultsContainer,
   FinalResultsWrapper,
   FinalResultsInfo,
@@ -102,9 +98,6 @@ const QuizPage = () => {
               <ProgressText>
                 Question {currentQuestion + 1} out of {questions.length}
               </ProgressText>
-              {/*<ProgressBar>
-                <ProgressBarFull></ProgressBarFull>
-      </ProgressBar>*/}
             </QuizItem>
             <QuizItem>
               <QuizItemPrefix>Current Score:</QuizItemPrefix>

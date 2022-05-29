@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "../ButtonElement";
+// import { Button } from "../ButtonElement";
 import {
   TestimonialsContainer,
   TestimonialsWrapper,
@@ -18,6 +18,7 @@ import {
   TestimonialName,
   TestimonialsButton,
 } from "./Testimonials";
+import imgUrl7 from "../../images/stars.png";
 
 const TestimonialsSection = ({
   lightBg,
@@ -37,14 +38,14 @@ const TestimonialsSection = ({
 }) => {
   return (
     <>
-      <TestimonialsContainer lightBg={lightBg} id={id}>
+      <TestimonialsContainer id="testimonials">
         <TestimonialsWrapper>
-          <TestimonialsRow imgStart={imgStart}>
+          <TestimonialsRow>
             <Column1>
               <TextWrapper>
-                <TopLine>{topLine}</TopLine>
-                <Heading lightText={lightText}>{headline}</Heading>
-                <Subtitle darkText={darkText}>{description}</Subtitle>
+                <TopLine>Testimonials</TopLine>
+                <Heading>Here's what people wrote about our courses.</Heading>
+                <Subtitle>We offer high quality affordable courses.</Subtitle>
                 <BtnWrap>
                   <TestimonialsButton
                     to="/signin"
@@ -52,11 +53,8 @@ const TestimonialsSection = ({
                     spy={true}
                     exact="true"
                     offset={-80}
-                    primary={primary ? 1 : 0}
-                    dark={dark ? 1 : 0}
-                    dark2={dark2 ? 1 : 0}
                   >
-                    {buttonLabel}
+                    Get started
                   </TestimonialsButton>
                 </BtnWrap>
               </TextWrapper>
@@ -64,32 +62,28 @@ const TestimonialsSection = ({
             <Column2>
               <Col2TestimonialWrap>
                 <ImgWrap>
-                  <Img src={img} alt={alt} />
+                  <Img src={imgUrl7} alt="stars" />
                 </ImgWrap>
-                <TestimonialCard darkText={darkText}>
-                  <TestimonialName lightText={lightText}>
-                    Karine
-                  </TestimonialName>
+                <TestimonialCard>
+                  <TestimonialName>Karine</TestimonialName>
                   Շնորհակալ եմ Ձեզ վերջապես ճիշտ ուղեցույց ընթերցելու համար։ Ես
                   ինքս հաճույքով սովորում եմ Ձեր իսկ աջակցությամբ։
                 </TestimonialCard>
 
-                <TestimonialCard darkText={darkText}>
-                  <TestimonialName lightText={lightText}>Zina</TestimonialName>
+                <TestimonialCard>
+                  <TestimonialName>Zina</TestimonialName>
                   Անսահման շնորհակալ եմ, չեք պատկերացնի ինչպես եմ սովորում․․․
                   առանց մի բան իմանալու, ձեզ լսելով․․․ անսահման շնորհակալ եմ․․․
                   Աստված օրհնի
                 </TestimonialCard>
 
-                <TestimonialCard darkText={darkText}>
-                  <TestimonialName lightText={lightText}>
-                    Andranik
-                  </TestimonialName>
+                <TestimonialCard>
+                  <TestimonialName>Andranik</TestimonialName>
                   Շնորհակալություն, շատ լավ եք ներկայացնում։
                 </TestimonialCard>
 
-                <TestimonialCard darkText={darkText}>
-                  <TestimonialName lightText={lightText}>Hovik</TestimonialName>
+                <TestimonialCard>
+                  <TestimonialName>Hovik</TestimonialName>
                   Բարև Ձեզ, բառեր չունեմ աարտահայտելու, թե որքան գիտելիք տվեցիք
                   իմ տղային։
                 </TestimonialCard>

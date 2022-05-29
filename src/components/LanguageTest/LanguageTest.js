@@ -4,7 +4,7 @@ import { Link as LinkR } from "react-router-dom";
 export const LangTestContainer = styled.div`
   margin-top: 200px;
   color: #000;
-  background: ${({ lightBg }) => (lightBg ? "#fff" : "#000")};
+  background: #fff;
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;
@@ -20,7 +20,6 @@ export const LangTestWrapper = styled.div`
   margin-left: auto;
   padding: 0 24px;
   justify-content: center;
-  //   background: green;
   margin-bottom: 50px;
 `;
 export const LangTestRow = styled.div`
@@ -29,12 +28,10 @@ export const LangTestRow = styled.div`
   column-gap: 2rem;
   align-items: center;
 
-  grid-template-areas: ${({ imgStart }) =>
-    imgStart ? `'col2 col1'` : `'col1 col2'`};
+  grid-template-areas: "col1 col2";
 
   @media screen and (max-width: 768px) {
-    grid-template-areas: ${({ imgStart }) =>
-      imgStart ? `'col1' 'col2'` : `'col1 col2' 'col1 col1' 'col2 col2'`};
+    grid-template-areas: "col1 col2" "col1 col1" "col2 col2";
   }
 `;
 
@@ -42,16 +39,13 @@ export const Column1 = styled.div`
   margin-bottom: 15px;
   padding: 0 15px;
   grid-area: col1;
-  // background-color: orange;
 `;
 export const Column2 = styled.div`
   margin-bottom: 15px;
   padding: 0 15px;
   grid-area: col2;
-  // background-color: orange;
 `;
 export const TextWrapper = styled.div`
-  // background: yellow;
   max-width: 540px;
   padding-top: 0;
   padding-bottom: 60px;
@@ -70,7 +64,7 @@ export const Heading = styled.h1`
   font-size: 45px;
   line-height: 1.1;
   font-weight: 600;
-  color: ${({ lightText }) => (lightText ? "#f7f8fa" : "#010606")};
+  color: #010606;
 
   @media screen and (max-width: 480px) {
     font-size: 32px;
@@ -82,7 +76,7 @@ export const Subtitle = styled.p`
   margin-bottom: 35px;
 
   line-height: 30px;
-  color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
+  color: #010606;
 `;
 
 export const BtnWrap = styled.div`
@@ -105,13 +99,10 @@ export const Img = styled.img`
 export const Col2LangTestWrap = styled.div`
   max-width: 540px;
   padding-top: 0;
-  // padding-bottom: 50px;
 `;
 
 export const LangTestCard = styled.div`
   margin: 0px 0 15px 0;
-  // background-color: red;
-  // border: 2px solid rgba(1, 111, 113, 0.35);
   border: 2px solid #f1f1f1;
   padding: 5px 7px;
   border-radius: 10px;
@@ -150,6 +141,5 @@ export const LangTestButton = styled(LinkR)`
   &:hover {
     transition: all 0.2s ease-in-out;
     background: #62c2a2;
-    // color: #010606;
   }
 `;

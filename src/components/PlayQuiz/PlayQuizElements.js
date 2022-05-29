@@ -36,8 +36,6 @@ export const PlayQuizContainer = styled.div`
 export const PlayQuizWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  /* background-color: red; */
-  // justify-content: center;
   align-items: space-between;
   justify-content: space-between;
   background: rgba(248, 244, 250, 1);
@@ -46,18 +44,14 @@ export const PlayQuizWrapper = styled.div`
   box-shadow: 0.1rem 0.4rem 1.4rem 0.4rem rgba(227, 199, 242, 0.8);
 `;
 export const QuizArea = styled.div`
-  /* background-color: red; */
   display: flex;
   justify-content: space-between;
 `;
-export const QuizItem = styled.div`
-  /* background-color: yellow; */
-`;
+export const QuizItem = styled.div``;
 
 export const ProgressText = styled.p`
   text-align: center;
   font-size: 2rem;
-  /* background-color: yellow; */
   color: #016f71;
   font-weight: bold;
 `;
@@ -89,9 +83,7 @@ export const QuizMainTextScore = styled.h1`
   font-weight: bold;
   /* background-color: yellow; */
 `;
-export const QuizQuestion = styled.h1`
-  // margin-top: 3rem;
-`;
+export const QuizQuestion = styled.h1``;
 
 export const ChoiceContainerUl = styled.ul`
   list-style: none;
@@ -99,13 +91,8 @@ export const ChoiceContainerUl = styled.ul`
 `;
 
 export const ChoiceContainerLi = styled.li`
-  /* display: flex;
-  margin-bottom: 0.8rem;
-  width: 100%;
-  border-radius: 4px;
-  min-width: 80rem; */
   margin-top: 8px;
-  /* background-color: rgb(18, 93, 255); */
+
   padding: 16px;
   border: 3px solid white;
   border-radius: 20px;
@@ -154,13 +141,6 @@ export const FinalResultsContainer = styled.div`
   max-width: 80rem;
   margin: 0 auto;
   padding: 2rem;
-
-  /* justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  /* background-color: rgba(243, 139, 163, 0.3); */
-  /* background-color: rgba(248, 244, 250, 1); */
   margin: 0 auto;
   padding: 30px;
   border-radius: 16px;
@@ -172,7 +152,6 @@ export const FinalResultsContainer = styled.div`
 export const FinalResultsWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  //   background-color: red;
   justify-content: center;
   align-items: center;
   border: 2px solid rgb(248, 244, 250);
