@@ -16,6 +16,7 @@ import {
   Col2TestimonialWrap,
   TestimonialCard,
   TestimonialName,
+  TestimonialsButton,
 } from "./Testimonials";
 
 const TestimonialsSection = ({
@@ -45,8 +46,8 @@ const TestimonialsSection = ({
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText}>{description}</Subtitle>
                 <BtnWrap>
-                  <Button
-                    to="home"
+                  <TestimonialsButton
+                    to="/signin"
                     duration={500}
                     spy={true}
                     exact="true"
@@ -56,7 +57,7 @@ const TestimonialsSection = ({
                     dark2={dark2 ? 1 : 0}
                   >
                     {buttonLabel}
-                  </Button>
+                  </TestimonialsButton>
                 </BtnWrap>
               </TextWrapper>
             </Column1>

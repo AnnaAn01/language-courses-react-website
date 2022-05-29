@@ -19,9 +19,13 @@ import {
   ChoiceContainerLi,
   ChoicePrefix,
   ChoiceText,
-  FinalResults,
+  FinalResultsContainer,
+  FinalResultsWrapper,
+  FinalResultsInfo,
   FinalResultsH2,
   FinalResultsImg,
+  FinalResultsLink,
+  FinalResultBtnContainer,
 } from "./PlayQuizElements";
 
 const resultCount = {
@@ -62,29 +66,35 @@ const QuizPage = () => {
     <PlayQuizContainer>
       <UniversalStyle />
       {showFinalResults ? (
-        <FinalResults>
-          <FinalResultsH2>
-            {score} out of {questions.length} correct - (
-            {Math.floor((score / questions.length) * 100)}%)
-            <div>
+        <FinalResultsContainer>
+          <FinalResultsWrapper>
+            <FinalResultsH2>
+              {score} out of {questions.length} correct - (
+              {Math.floor((score / questions.length) * 100)}%)
+            </FinalResultsH2>
+            <FinalResultsImg
+              src={
+                score <= 5
+                  ? FinalResultImg1
+                  : score <= 10
+                  ? FinalResultImg2
+                  : FinalResultImg3
+              }
+              alt="quiz"
+            ></FinalResultsImg>
+            <FinalResultsInfo>
               {score <= 5
                 ? resultCount.answers.oneToFive
                 : score <= 10
                 ? resultCount.answers.sixToTen
                 : resultCount.answers.elevenToFifteen}
-            </div>
-          </FinalResultsH2>
-          <FinalResultsImg
-            src={
-              score <= 5
-                ? FinalResultImg1
-                : score <= 10
-                ? FinalResultImg2
-                : FinalResultImg3
-            }
-            alt="quiz"
-          ></FinalResultsImg>
-        </FinalResults>
+            </FinalResultsInfo>
+          </FinalResultsWrapper>
+          <FinalResultBtnContainer>
+            <FinalResultsLink to="/">See courses</FinalResultsLink>
+            <FinalResultsLink to="/">Go to homepage</FinalResultsLink>
+          </FinalResultBtnContainer>
+        </FinalResultsContainer>
       ) : (
         <PlayQuizWrapper>
           <QuizArea>

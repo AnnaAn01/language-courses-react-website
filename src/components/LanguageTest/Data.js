@@ -8,7 +8,7 @@ export const homeObjThree = {
   topLine: "language test",
   headline: "Try our online test to find out which course is right for you. ",
   description: "We offer high quality affordable courses.",
-  buttonLabel: "Get started",
+  buttonLabel: "Take the quiz",
   imgStart: true,
   img: imgUrl8,
   alt: "Car",

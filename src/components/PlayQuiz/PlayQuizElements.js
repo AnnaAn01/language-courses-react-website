@@ -144,13 +144,23 @@ export const ChoiceText = styled.p`
   font-size: 1.5rem;
 `;
 
-export const FinalResults = styled.div`
+export const FinalResultsContainer = styled.div`
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
   justify-content: center;
+  align-items: center;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem;
+
+  /* justify-content: center;
   align-items: center;
   display: flex;
   flex-direction: column;
   /* background-color: rgba(243, 139, 163, 0.3); */
-  background-color: rgba(248, 244, 250, 1);
+  /* background-color: rgba(248, 244, 250, 1); */
   margin: 0 auto;
   padding: 30px;
   border-radius: 16px;
@@ -159,11 +169,60 @@ export const FinalResults = styled.div`
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 `;
 
+export const FinalResultsWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  //   background-color: red;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(248, 244, 250);
+  padding: 2rem;
+  border-radius: 20px;
+  background: rgba(248, 244, 250, 0.5);
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(227, 199, 242, 0.7);
+`;
+
 export const FinalResultsH2 = styled.h2`
-  font-size: 2rem;
+  font-size: 2.5rem;
+  color: #000;
+  margin-bottom: 2rem;
+  margin: 2rem 3rem 3rem 3rem;
+  text-align: center;
 `;
 
 export const FinalResultsImg = styled.img`
-  width: 50%;
+  width: 30%;
+  margin: 2rem 0;
+`;
+
+export const FinalResultsInfo = styled.div`
+  font-size: 2rem;
+  margin: 1rem 0;
 `;
 // correct and incorrect here
+export const FinalResultBtnContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+
+export const FinalResultsLink = styled(LinkR)`
+  font-weight: 500;
+  font-size: 2.4rem;
+  padding: 2rem 0;
+  width: 25rem;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  border-radius: 20px;
+  margin-top: 3rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  background: rgb(208, 122, 255);
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(5, 216, 128, 0.3);
+    transition: transform 150ms;
+    transform: scale(1.03);
+  }
+`;

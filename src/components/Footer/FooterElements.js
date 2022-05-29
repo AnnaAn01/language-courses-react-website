@@ -105,6 +105,8 @@ export const SocialIconLink = styled.a`
   font-size: 24px;
 
   &:hover {
-    font-size: 25px;
+    transform: scale(1.5);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
   }
 `;
