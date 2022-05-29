@@ -6,7 +6,6 @@ import InfoSection from "../components/InfoSection";
 import Testimonials from "../components/Testimonials";
 import LanguageTest from "../components/LanguageTest";
 
-import { homeObjOne } from "../components/InfoSection/Data";
 import { homeObjTwo } from "../components/Testimonials/Data";
 import { homeObjThree } from "../components/LanguageTest/Data";
 
@@ -25,7 +24,7 @@ const Home = () => {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       {/*<HeroSection />*/}
-      <InfoSection {...homeObjOne} />
+      <InfoSection />
       <Courses />
       <Testimonials {...homeObjTwo} />
       <LanguageTest {...homeObjThree} />

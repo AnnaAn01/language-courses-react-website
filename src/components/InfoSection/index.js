@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "../ButtonElement";
+import imgUrl6 from "../../images/svg-6.svg";
 
 import {
   InfoContainer,
@@ -17,32 +18,20 @@ import {
   InfoButton,
 } from "./InfoElements";
 
-const InfoSection = ({
-  lightBg,
-  id,
-  imgStart,
-  topLine,
-  lightText,
-  headline,
-  darkText,
-  description,
-  buttonLabel,
-  img,
-  alt,
-  primary,
-  dark,
-  dark2,
-}) => {
+const InfoSection = () => {
   return (
     <>
-      <InfoContainer lightBg={lightBg} id={id}>
+      <InfoContainer id="about">
         <InfoWrapper>
-          <InfoRow imgStart={imgStart}>
+          <InfoRow>
             <Column1>
               <TextWrapper>
-                <TopLine>{topLine}</TopLine>
-                <Heading lightText={lightText}>{headline}</Heading>
-                <Subtitle darkText={darkText}>{description}</Subtitle>
+                <TopLine>Language Courses</TopLine>
+                <Heading>English language courses for beginners</Heading>
+                <Subtitle>
+                  Get access to our exclusive courses and learn English grammar
+                  and vocabulary without struggling.
+                </Subtitle>
                 <BtnWrap>
                   <InfoButton
                     to="/signin"
@@ -50,18 +39,15 @@ const InfoSection = ({
                     spy={true}
                     exact="true"
                     offset={-80}
-                    primary={primary ? 1 : 0}
-                    dark={dark ? 1 : 0}
-                    dark2={dark2 ? 1 : 0}
                   >
-                    {buttonLabel}
+                    Get started
                   </InfoButton>
                 </BtnWrap>
               </TextWrapper>
             </Column1>
             <Column2>
               <ImgWrap>
-                <Img src={img} alt={alt} />
+                <Img src={imgUrl6} alt="info image" />
               </ImgWrap>
             </Column2>
           </InfoRow>

@@ -1,10 +1,9 @@
 import styled from "styled-components";
-import { Link } from "react-scroll";
 import { Link as LinkR } from "react-router-dom";
 
 export const InfoContainer = styled.div`
   color: #000;
-  background: ${({ lightBg }) => (lightBg ? "#fff" : "#000")};
+  background: #fff;
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;
@@ -28,12 +27,10 @@ export const InfoRow = styled.div`
   grid-auto-columns: minmax(auto, 1fr);
   column-gap: 2rem;
   align-items: center;
-  grid-template-areas: ${({ imgStart }) =>
-    imgStart ? `'col2 col1'` : `'col1 col2'`};
+  grid-template-areas: "col1 col2";
 
   @media screen and (max-width: 768px) {
-    grid-template-areas: ${({ imgStart }) =>
-      imgStart ? `'col1' 'col2'` : `'col1 col2' 'col1 col1' 'col2 col2'`};
+    grid-template-areas: "col1 col2" "col1 col1" "col2 col2";
   }
 `;
 
@@ -67,7 +64,7 @@ export const Heading = styled.h1`
   font-size: 48px;
   line-height: 1.1;
   font-weight: 600;
-  color: ${({ lightText }) => (lightText ? "#f7f8fa" : "#010606")};
+  color: #010606;
 
   @media screen and (max-width: 480px) {
     font-size: 32px;
@@ -78,7 +75,7 @@ export const Subtitle = styled.p`
   max-width: 440px;
   margin-bottom: 35px;
   line-height: 24px;
-  color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
+  color: #010606;
 `;
 
 export const BtnWrap = styled.div`
@@ -116,6 +113,5 @@ export const InfoButton = styled(LinkR)`
   &:hover {
     transition: all 0.2s ease-in-out;
     background: #62c2a2;
-    // color: #010606;
   }
 `;
